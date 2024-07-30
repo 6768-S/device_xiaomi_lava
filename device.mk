@@ -41,6 +41,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilt/dtb.img:dtb.img
 
+# Keys
+-include vendor/extra/product.mk
+
 # NFC stack (AOSP)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_galahad/android.hardware.nfc.xml \
